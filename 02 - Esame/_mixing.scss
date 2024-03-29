@@ -1,0 +1,25 @@
+@mixin impostaBorder-radius($r,$b) {
+    border-bottom-left-radius: $r;
+    -webkit-bottom-left-radius: $r;
+    -moz-bottom-left-radius: $r;
+    -ms-bottom-left-radius: $r;
+
+    border-bottom-right-radius: $b;
+    -webkit-bottom-right-radius: $b;
+    -moz-bottom-right-radius: $b;
+    -ms-bottom-right-radius: $b;
+    
+}
+
+@mixin imposta-margin($m,$m1,$m2,$m3) {
+    margin-top: $m;
+    margin-right:$m1;
+    margin-bottom: $m2;
+    margin-left: $m3;
+   
+}
+
+@mixin impostaDim($d,$d1) {
+    width: $d;
+    height: $d1;
+}

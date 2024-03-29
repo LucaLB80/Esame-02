@@ -1,0 +1,456 @@
+@import "variabili";
+@import "mixing";
+
+// colore Background
+%b {
+    @if $template==nativo {
+        background-color:$bg ;
+    }
+
+    @else if $template==secondario {
+        background-color:$bg_sec ;
+    }
+}
+//  colori
+%c {
+    @if $template==nativo {
+        color:$color;
+    }
+
+    @else if $template==secondario {
+        color:$color_sec ;
+    }
+}
+// colore Hover
+%h {
+    @if $template==nativo {
+        background-color:$bg-hover;
+    }
+
+    @else if $template==secondario {
+        background-color:$bg-hover_sec ;
+    }
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../Font/Roboto/Roboto-Bold.ttf)
+}
+
+*{
+    box-sizing:border-box ;
+    margin: 0;
+    padding: 0;
+}
+
+body{   
+    //   background:url(../Immagini/blue_elegante.jpg) ; 
+    //  -webkit-background-size: cover;
+    //   background-size: cover;	
+    //   background-position:center;   
+      font-family: Roboto,sans-serif,Arial, Helvetica, sans-serif;
+      img.bg{
+        position:fixed;
+        left:0;
+        top:0;
+        min-width:100%;
+        min-height:100%;
+        z-index:-100;
+      }   
+}
+
+/*BARRA DI NAVIGAZIONE*/
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 10%;
+    @include impostaDim(100%,150px);
+    @include impostaBorder-radius(30px,30px);
+    background-color: $bg_2; 
+    position: fixed; 
+    @include imposta-margin(-611px,0px,0px,0px);  
+    
+    @media only screen and (max-width: 480px) {
+            padding: 0px ;
+            @include impostaDim(80%,280px);        
+            flex-direction: column; 
+            @include imposta-margin(0px,0px,0px,47px);  
+            position: static;            
+        } 
+    .menu{
+        font-weight: 300;
+        font-size: 20px;
+        text-decoration: none;
+        color: $color2; 
+        list-style: none;
+        @media only screen and (max-width: 480px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        li{
+            display: inline-block;
+            padding: 0 20px;
+            a{
+                font-weight: 300;
+                font-size: 20px;
+                text-decoration: none;
+                color: $color2; 
+                /*transition: all .3s ease;*/
+                font-size: larger;
+                @media only screen and (max-width: 480px){
+                    font-size: 30px;
+                    text-align: center;
+                }
+                &:hover{                   
+                   color:$color;
+                }
+            }
+            a#work{
+                @media only screen and (max-width: 480px){
+                    margin-left: -9px;
+                }
+            }
+        }
+    }   
+    div.button{
+        padding: 9px 25px;
+        @extend %b;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;   
+        @include imposta-margin(0px,0px,0px,0px);
+        @media only screen and (max-width: 480px){
+            @include imposta-margin(0px,0px,15px,0px);
+        }
+        &:hover{
+            @extend %h;
+        }
+        a{
+            font-size: 20px;
+            color:$color2;
+            text-decoration: none;
+        }
+    }  
+
+}
+
+
+/*HOME*/
+
+// #video{
+    //  position:fixed;
+    // 	left:0;
+    //  top:0;
+    // 	min-width:100%;
+    // 	min-height:100%;
+    // 	@include impostaDim(auto,auto);
+    // 	z-index:-100;
+    // 	/*visibility: visible;*/
+// }
+.presentazione{
+    text-align: left;
+    @include imposta-margin(612px,0px,0px,210px);
+    color: $color2;
+    @media only screen and (max-width: 480px){
+        margin:40px;
+        margin-left: 0px;
+        @include impostaDim(100%,100%);
+        
+    }
+    #hello{
+        text-align: left;
+        @include imposta-margin(0px,0px,0px,4px);
+        color: $color2;
+        width: 20%;
+        font-size: 30px;
+        text-shadow: 10px 10px 10px #000000, 15px 15px 15px #9b9b9b;
+        @media only screen and (max-width: 480px){
+            width: 80%;
+            text-align: center;
+            font-size: 20px;
+            @include imposta-margin(0px,0px,0px,40px);
+        }
+    }
+    #hello2{
+        text-align: left;
+        margin-top: 0px;
+        color: $color2;
+        width: 45%;
+        font-size: 80px;
+        text-shadow: 10px 10px 10px #000000, 15px 15px 15px #9b9b9b;
+        @media only screen and (max-width: 480px){
+            width: 80%;
+            text-align: center;      
+            font-size: 50px;  
+            @include imposta-margin(0px,0px,0px,37px);
+        }
+    }
+   
+}
+
+div.button-1{
+    padding: 9px 25px;
+    @extend %b;
+    border: none;
+    border-radius: 10px;
+    // cursor: pointer;
+    width: 15%;
+    position: relative;
+    @include imposta-margin(30px,0px,0px,213px);
+    text-align: center;
+    @media only screen and (max-width: 480px){
+        width: 70%;
+        @include imposta-margin(0px,0px,0px,77px);
+    }
+    &:hover{
+        @extend %h;
+    }
+    a{
+        font-size: 20px;
+        color:$color2;
+        text-decoration: none;
+    }
+}
+
+div.box{
+    @include impostaDim(80%,600px);
+    @include imposta-margin(200px,0px,200px,197px);
+    @media only screen and (max-width: 480px){
+        @include impostaDim(80%,80%);
+        @include imposta-margin(50px,0px,0px,50px);  
+    }
+    h3{
+        font-size: 60px;
+        @include imposta-margin(42px,0px,90px,657px);
+        width: 400px;
+        color: $color2;
+        text-shadow: 10px 10px 10px #000000, 15px 15px 15px #9b9b9b;
+        @media only screen and (max-width: 480px){
+            font-size: 50px;
+            @include imposta-margin(0px,0px,0px,75px);
+            width: 240px;
+        }
+    }
+    .img-home1{
+        width: 30%;
+        float: left;
+        @include imposta-margin(0px,126px,0px,10px);
+        border-radius: 20px; 
+        background-color:$color2 ;
+        border: 5px solid;
+        @extend %c;
+        padding: 8px;
+        @media only screen and (max-width: 480px){
+            width: 90%;; 
+            border: 2px solid;
+            @include imposta-margin(30px,0px,35px,17px);
+            padding: 3px;
+        }
+    
+    }
+    p.lorem1{
+        font-size: large;
+        color: $color2;
+        @include imposta-margin(0px,0px,0px,0px);
+        @media only screen and (max-width: 480px){
+            font-size:medium;        
+            text-align: justify; 
+            @include imposta-margin(0px,0px,0px,0px);
+        }
+        
+    }
+}
+
+
+
+div.box2{
+    width: 100%;
+    @include imposta-margin(0px,0px,0px,0px);
+    background-color: #0000003c;
+    @media only screen and (max-width: 480px){
+        @include impostaDim(90%,100%);
+        @include imposta-margin(0px,0px,0px,24px);
+        text-align: center;
+        border-radius: 15px;
+    }
+    h3{
+        font-size: 90px;
+        color: $color2;
+        position: absolute;
+        @include imposta-margin(174px,0px,0px,212px);
+        text-shadow: 10px 10px 10px #000000, 15px 15px 15px #9b9b9b;
+        @media only screen and (max-width: 480px){
+            font-size: 50px;
+            position: relative;
+            @include imposta-margin(41px,0px,0px,-15px);
+            text-shadow: none;
+            padding-top: 20px;
+        }
+      
+    }
+    h4{
+        font-size: 20px;
+        color: $color2;
+        padding: 10px;
+        margin-left: 54%;
+        @media only screen and (max-width: 480px){
+            position: absolute;
+            padding: 11px;
+            @include imposta-margin(44px,0px,0px,40px);
+        }
+    }
+    hr{
+        width: 25%;
+        @include imposta-margin(0px,0px,0px,54.5%);
+        border: solid 1px $color2;
+        @media only screen and (max-width: 480px){
+            width: 80%;
+            @include imposta-margin(0px,0px,0px,10%);
+        }
+    }
+    p.lorem2{
+        color: $color2;
+        padding: 10px;
+        margin-left: 54%;
+        @media only screen and (max-width: 480px){
+            padding: 100px;
+            @include imposta-margin(23px,0px,-60px,-15px);
+
+        }
+    }
+    
+}
+
+
+
+/*FOOTER*/
+footer{
+    background-color:$bg_2;
+    border-radius: 30px;
+    width: 100%;
+    @media only screen and (max-width: 480px){
+        @include imposta-margin(100px,0px,0px,48px);
+        @include impostaDim(80%,80%);
+    }
+    .container{        
+        margin: 93px;
+        display: flex;
+        justify-content: center;
+        @media only screen and (max-width: 480px){
+            @include imposta-margin(20px,0px,0px,0px);
+        }
+        .footer-contenuto{
+            @include impostaDim(33.3%,100px);
+            margin-top: 30px;
+            @media only screen and (max-width: 480px){
+                @include impostaDim(180px,158px);
+                @include imposta-margin(11px,-119px,0px,0px);
+            }
+            h3{
+                font-size: 28px;
+                margin-bottom: 15px;
+                text-align: center;
+                color: $color2;
+            }
+            p{
+                width: 180px;
+                margin: auto;
+                padding: 7px;
+                font-size: 15px;
+                color: $color2;
+            }
+            // .contact{
+            //     list-style-type: none;
+            //     margin: auto; 
+            //     font-size: 18px;
+                
+            //     li{
+            //         padding: 6px; 
+                     
+                
+            //         a{
+            //             text-decoration: none;
+            //             cursor: text;
+            //             color: $color2;
+            //             width: 180px;
+                        
+            //         }
+            //     }
+            
+            // }
+
+            ul{
+                text-align: center;
+                padding: 5px;
+                
+            }
+            h3#list{
+                @media only screen and (max-width: 480px){
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+            .list{
+                width: auto;
+                text-align: center;
+                list-style-type: none;
+                padding: 20px;
+                position: relative;
+                top: -10px;
+                @media only screen and (max-width: 480px){
+                    display: none;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    color:$color2;
+                    &:hover{
+                        color: $color;
+                    }
+                }
+  
+            }
+            .logo2{
+                position: relative;
+                left: 200px;
+                top: 40px;
+                width: 20%;
+                @media only screen and (max-width: 480px){
+                    display: none;
+                }
+            }
+        }
+     
+    }
+    .bottom-bar{
+        @extend %b;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 105px; 
+        @media only screen and (max-width: 480px){
+            @include imposta-margin(23px,0px,0px,0px);
+        }   
+    }
+        
+}
+
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    @include impostaDim(0px,2px);
+    @extend %b;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+
+
+    

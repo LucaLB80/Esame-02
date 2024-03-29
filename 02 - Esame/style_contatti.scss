@@ -1,0 +1,344 @@
+@import "variabili";
+@import "mixing";
+
+// colore Background
+%b {
+    @if $template==nativo {
+        background-color:$bg ;
+    }
+
+    @else if $template==secondario {
+        background-color:$bg_sec ;
+    }
+}
+//  Colori
+%c {
+    @if $template==nativo {
+        color:$color;
+    }
+
+    @else if $template==secondario {
+        color:$color_sec ;
+    }
+}
+// colore Hover
+%h {
+    @if $template==nativo {
+        background-color:$bg-hover;
+    }
+
+    @else if $template==secondario {
+        background-color:$bg-hover_sec ;
+    }
+}
+
+
+@font-face {
+    font-family: Roboto;
+    src: url(../Font/Roboto/Roboto-Bold.ttf)
+}
+
+*{
+    box-sizing:border-box ;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{      
+    font-family: Roboto,sans-serif,Arial, Helvetica, sans-serif; 
+
+    img.bg{
+      position:fixed;
+      left:0;
+      top:0;
+      min-width:100%;
+      min-height:100%;
+      z-index:-100;
+      @media only screen and (max-width: 480px){
+        background-size:100%;
+        
+      } 
+    } 
+}
+
+/*BARRA DI NAVIGAZIONE*/
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 10%;
+    @include impostaDim(100%,150px);
+    @include impostaBorder-radius(30px,30px);
+    background-color: $bg_2;  
+
+    @media only screen and (max-width: 480px) {
+            padding: 10px ;
+            @include impostaDim(80%,300px);        
+            flex-direction: column; 
+            @include imposta-margin(0px,0px,0px,47px);  
+                     
+        } 
+        img.logo{
+            @include imposta-margin(0px,0px,0px,23px);
+        }
+    .menu{
+        font-weight: 300;
+        font-size: 20px;
+        text-decoration: none;
+        color: $color2; 
+        list-style: none;
+        @include imposta-margin(0px,530px,0px,0px);
+
+        @media only screen and (max-width: 480px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include imposta-margin(0px,-10px,15px,0px);
+        }
+        li{
+            display: inline-block;
+            padding: 0 20px;
+            a{
+                font-weight: 300;
+                font-size: 20px;
+                text-decoration: none;
+                color: $color2; 
+                /*transition: all .3s ease;*/
+                font-size: larger;
+
+                @media only screen and (max-width: 480px){
+                    font-size: 30px;
+                    text-align: center;
+                }
+                &:hover{                   
+                   color:$color;
+                }
+            }
+        }
+    }   
+}
+/*HOME*/
+
+form{
+    @include imposta-margin(0px,0px,0px,0px);
+    padding: 20px;
+    @media only screen and (max-width: 480px){
+        // @include imposta-margin(0px,0px,0px,0px);
+    }
+
+    fieldset{
+        border: none;
+        @include imposta-margin(0px,0px,30px,0px);
+        padding: 0;
+        .testo{
+            color: white;
+            text-align: center;
+            line-height: 45px;
+            @include imposta-margin(36px,0px,29px,7px);
+
+            @media only screen and (max-width: 480px){
+                width: 80%;
+                height: 128px;
+                @include imposta-margin(30px,0px,26px,41px);
+            }
+            h2{
+                font-size: 50px;
+                margin-top: -21px;
+
+                @media only screen and (max-width: 480px){
+                    font-size: 30px;
+                }
+            }
+            h4{
+                font-size: 25px;
+                margin-top: 20px;
+
+                @media only screen and (max-width: 480px){
+                    font-size: 20px;
+                    margin-top: 0px;
+                }
+            }
+        }
+        label{
+            color:#c7c7c7;
+            @include imposta-margin(0px,0px,0px,860px);
+       
+
+            @media only screen and (max-width: 480px){
+                @include imposta-margin(0px,0px,0px,25px);
+            }
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea
+        {
+            width: 20%;
+            padding: 8px 10px;
+            @include imposta-margin(2px,1px,15px,860px);
+            display: inline-block;
+            border: none;
+            border-bottom: 2px solid #ffbb00;
+            outline: none;
+            font-size: 1.1em;
+            background-color: #c7c7c7;
+            border-radius: 10px;
+
+            @media only screen and (max-width: 480px){
+                width: 90%;
+                @include imposta-margin(3px,0px,15px,20px); 
+                font-size: 0.8em;
+            }
+        }
+       
+        textarea{
+            min-height: 50px;
+        }
+        .button-1{
+            font-weight: 300;
+            font-size: 20px;
+            @include imposta-margin(0px,0px,0px,965px);
+            @extend %b;
+            text-decoration: none;
+            padding: 11px 82px;
+            border: none;
+            border-radius: 10px; 
+            @media only screen and (max-width: 480px){
+                @include imposta-margin(0px,0px,0px,115px);
+
+            } 
+            &:hover{
+                background-color: rgb(128, 127, 127);
+            }
+            a{
+                font-size: 25px;
+                font-weight: bold;
+                text-decoration: none;
+                color: #fff;
+                @media only screen and (max-width: 480px){
+                    font-size: 15px;
+                }
+                &:hover{
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+.errore {
+    color: red;
+}
+
+/*FOOTER*/
+footer{
+    background-color:$bg_2;
+    border-radius: 30px;
+    width: 100%;
+    @include imposta-margin(-89px,0px,0px,0px);
+
+    @media only screen and (max-width: 480px){
+        @include imposta-margin(0px,0px,0px,47px);
+        @include impostaDim(80%,80%);
+    }
+    .container{        
+        margin: 60px;
+        display: flex;
+        justify-content: center;
+
+        @media only screen and (max-width: 480px){
+            @include imposta-margin(20px,0px,0px,0px);
+        }
+        .footer-contenuto{
+            @include impostaDim(33.3%,100px);
+            margin-top: 49px;
+
+            @media only screen and (max-width: 480px){
+                @include impostaDim(180px,158px);
+                @include imposta-margin(11px,-119px,0px,0px);
+            }
+            h3{
+                font-size: 28px;
+                margin-bottom: 15px;
+                text-align: center;
+                color: $color2;
+            }
+            p{
+                width: 180px;
+                margin: auto;
+                padding: 7px;
+                font-size: 15px;
+                color: $color2;
+            }
+            ul{
+                text-align: center;
+                padding: 5px;
+                
+            }
+            h3#list{
+                @media only screen and (max-width: 480px){
+                    display: none;
+                }
+            }
+            .list{
+                width: auto;
+                text-align: center;
+                list-style-type: none;
+                padding: 20px;
+                position: relative;
+                top: -10px;
+
+                @media only screen and (max-width: 480px){
+                    display: none;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    color:$color2;
+                    &:hover{
+                        color: $color;
+                    }
+                }
+  
+            }
+            .logo2{
+                position: relative;
+                left: 200px;
+                top: 40px;
+                width: 20%;
+
+                @media only screen and (max-width: 480px){
+                    display: none;
+                }
+            }
+        }
+     
+    }
+    .bottom-bar{
+        @extend %b;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 105px; 
+        
+        @media only screen and (max-width: 480px){
+            @include imposta-margin(23px,0px,0px,0px);
+        }   
+    }
+        
+}
+
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    @include impostaDim(0px,2px);
+    @extend %b;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}

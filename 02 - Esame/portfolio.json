@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "url": "work.php?idClente=1",
+        "title": "Vai a Work 1",
+        "img": "Immagini/laptop-and-phone.jpg",
+        "alt": "img",
+        "width": "450px",
+        "class1": "img-home",
+        "titolo": "Work 1",
+        "class": "lorem",        
+        "nome": "Cliente 1",
+        "par": "(Work 1) Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium! Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!"
+    },
+    {
+        "id": 2,
+        "url": "work.php?idClente=2",
+        "title": "Vai a Work 2",
+        "img": "Immagini/coffee-cup-and-computer.jpg",
+        "alt": "img",
+        "width": "450px",
+        "class1": "img-home",
+        "titolo": "Work 2",
+        "class": "lorem",
+        "nome": "Cliente 2",
+        "par":"(Work 2) Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium! Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!"
+    },
+    {
+        "id": 3,       
+        "url": "work.php?idClente=3",
+        "title": "Vai a Work 3",
+        "img": "Immagini/piano-scrivania-ufficio-.jpg",
+        "alt": "img",
+        "width": "450px",
+        "class1": "img-home",
+        "titolo": "Work 3",
+        "class": "lorem",
+        "nome": "Cliente 3",
+        "par":"(Work 3) Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium! Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!"
+    },
+    {
+        "id": 4,        
+        "url": "work.php?idClente=4",
+        "title": "Vai a Work 4",
+        "img": "Immagini/folderCover.jpg",
+        "alt": "img",
+        "width": "450px",
+        "class1": "img-home",
+        "titolo": "Work 4",
+        "class": "lorem",
+        "nome": "Cliente 4",
+        "par":"(Work 4) Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium! Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!"
+    },
+    {
+        "id": 5,
+        "url": "work.php?idClente=5",
+        "title": "Vai a Work 5",
+        "img": "Immagini/immagini-da-scaricare.jpg",
+        "alt": "img",
+        "width": "450px",
+        "class1": "img-home",
+        "titolo": "Work 5",
+        "class": "lorem",       
+        "nome": "Cliente 5",
+        "par":"(Work 5) Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium! Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!"
+    },
+    {
+        "id": 6,        
+        "url": "work.php?idClente=6",
+        "title": "Vai a Work 6",
+        "img": "Immagini/immagini-sfondo-1.jpg",
+        "alt": "img",
+        "width": "450px",
+        "class1": "img-home",
+        "titolo": "Work 6",
+        "class": "lorem",
+        "nome": "Cliente 6",
+        "par":"(Work 6) Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repellat eveniet dignissimos cum totam dolores debitisiure ad consequatur. Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium! Aperiam alias architecto cum libero atque id enim distinctio molestias quidem praesentium!"
+    }
+]

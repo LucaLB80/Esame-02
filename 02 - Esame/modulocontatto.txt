@@ -1,0 +1,28 @@
+------------------------------
+<strong>Nome:</strong> Pippo
+<strong>Cognome:</strong> Franco
+<strong>E-Mail:</strong> pippofranco@gmail.com
+<strong>Telefono:</strong> 0115764178
+<strong>Testo:</strong> ciao da pippo franco
+
+------------------------------
+------------------------------
+<strong>Nome:</strong> Pippo
+<strong>Cognome:</strong> Franco
+<strong>E-Mail:</strong> pippofranco@gmail.com
+<strong>Telefono:</strong> 0115764178
+<strong>Testo:</strong> ciao da pippo franco
+
+------------------------------
+------------------------------
+<strong>Nome:</strong> Pippo
+<strong>Cognome:</strong> Franco
+<strong>E-Mail:</strong> pippofranco@yahoo.it
+<strong>Telefono:</strong> 0115764178
+<strong>Testo:</strong> ciao da pippo franco
+
+------------------------------
+
+
+
+

@@ -1,0 +1,27 @@
+{
+    "header":[{"id":"home","href":"index.php","title":"Vai a Home","testo":"Home"},
+
+              {"id":"work", "href":"work.php","title":"Vai a Work","testo":"Work"},
+
+              {"id":"port","href":"portfolio.php","title":"Vai a Portfolio","testo":"Portfolio"}],
+
+
+    "button":[{"class":"button-1","type":"submit","title":"Clicca per inviare","testo":"Invia"}],
+    
+
+    "contatti":[{"href":"null","title":"Email","testo":"Email:info@esempio.it"},
+
+            {"href":"null","title":"Telefono","testo":"Telefono: +39 12345678"},
+
+            {"href":"null","title":"Indirizzo","testo":"Indirizzo: Mio Indirizzo 123"}],
+
+
+    "footer":[ {"href":"index.php","title":"Vai a Home","testo":"Home"},
+    
+            {"href":"work.php","title":"Vai a Work","testo":"Work"},
+            
+            {"href":"portfolio.php","title":"Vai a Portfolio","testo":"Portfolio"}]
+
+
+
+}

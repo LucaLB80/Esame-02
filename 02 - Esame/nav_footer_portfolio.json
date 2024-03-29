@@ -1,0 +1,23 @@
+{
+    "header":[{"id":"home","href":"index.php","title":"Vai a Home","testo":"Home"},
+
+              {"id":"work", "href":"work.php","title":"Vai a Work","testo":"Work"}],
+
+
+     "button":[{"class":"button","href":"contatti.php","title":"Vai a Contatti","testo":"Scrivimi"}],     
+
+
+     "contatti":[{"href":"null","title":"Email","testo":"Email:info@esempio.it"},
+
+                {"href":"null","title":"Telefono","testo":"Telefono: +39 12345678"},
+
+                {"href":"null","title":"Indirizzo","testo":"Indirizzo: Mio Indirizzo 123"}],
+
+
+     "footer":[ {"href":"index.php","title":"Vai a Home","testo":"Home"},
+
+                {"href":"work.php","title":"Vai a Work","testo":"Work"},
+
+                {"href":"contatti.php","title":"Vai a Contatti","testo":"Write Me"}]
+
+}
