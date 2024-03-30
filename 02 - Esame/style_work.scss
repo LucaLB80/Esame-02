@@ -163,7 +163,7 @@ main{
 
                    @media only screen and (max-width: 480px){
                         width: 280px;
-                        @include imposta-margin(40px,50px,50px,104px);
+                        @include imposta-margin(40px,50px,50px,100px);
                         border: 2px solid #050505;
                         padding: 2px;
                         box-shadow: 3px 3px 2px $color2, 
